@@ -8,6 +8,10 @@ function addContent(name){
     $("#main-content").load("/views/" + name + ".html");
 }
 
+function loadContent(name){
+    window.location.href = "https://byt3d1st1ll3r.github.io?content=" + name
+}
+
 function loadParams(){
     queryString = window.location.search;
     urlParams = new URLSearchParams(queryString);
