@@ -161,7 +161,7 @@ ol, ul{
     /*width: 70%;*/
     text-align: center !important;
     /*height: 70vh !important;*/
-    /*max-height: 70vh !important;*/
+    max-height: 70vh !important;
     /*max-width: 90vh !important;*/
 }
 
@@ -258,4 +258,5 @@ figure > figcaption {
 }
 
 /* Particular styles Ends */
+
 
