@@ -1,0 +1,91 @@
+<div class="menu-bar-container">
+    <div class="menu-bar">
+        <!-- Navigation Bar -->
+        <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-visible@m" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+            
+            <div class="uk-navbar-left">
+                <a href="" class="uk-navbar-item uk-logo uk-light">byt3d1$t1ll3r's Personal Blog</a>
+            </div>
+            <div class="uk-navbar-right">
+
+                <ul class="uk-navbar-nav uk-light">
+                    <li><a class="uk-button-text uk-text-capitalize menu-item" href="javascript:addContent('home');">Home</a></li>
+                    <li><a class="uk-button-text uk-text-capitalize menu-item drop" href="javascript:addContent('posts/posts');">Posts</a>
+                        <ul class="no-bullets">
+                            <li>
+                                <a class="uk-button-text uk-text-capitalize menu-subitem" href="javascript:addContent('posts/firstjob');">Looking for your first pentesting job?</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="uk-button-text uk-text-capitalize menu-item drop" href="javascript:addContent('reviews/reviews');">Reviews</a></li>
+                    <li><a class="uk-button-text uk-text-capitalize menu-item" href="javascript:addContent('articles/articles');">Articles</a></li>
+                    <li><a class="uk-button-text uk-text-capitalize menu-item" href="javascript:addContent('me');">About Me</a></li>
+                </ul>
+    
+            </div>
+        </nav>
+        <!-- Navigation Bar Ends  -->
+
+        <!-- Navigation Bar Mobile -->
+        <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-hidden@m" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+            
+            <div class="uk-navbar-left">
+                <a href="" class="uk-navbar-item uk-logo uk-light">byt3d1$t1ll3r's Personal Blog</a>
+            </div>
+            <div class="uk-navbar-right">
+
+                <ul class="uk-navbar-nav uk-light">
+                    <li><button uk-toggle="target: #offcanvas-nav" type="button" uk-navbar-toggle-icon></button></li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <!-- Change This -->
+        <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar uk-flex-column">
+    
+                <ul class="uk-nav uk-nav-primary uk-nav-left uk-margin-auto-vertical">
+                    <li class="uk-active"><a href="javascript:addContent('home');">Home</a></li>
+                    <li class="uk-active"><a class="button-text1" href="#"> > Posts</a>
+                        <ul class="no-bullets uk-nav-left">
+                            <li class="uk-active">
+                                <a class="button-text2 uk-text-capitalize menu-subitem2" href="javascript:addContent('posts/firstjob');">Looking for your first pentesting job?</a>
+                            </li>                            
+                        </ul>
+                    </li>
+                    <li class="uk-active"><a class="button-text1" href="#"> > Reviews</a>
+                        <ul class="no-bullets uk-nav-left">
+                            <li class="uk-active">
+                                <a class="button-text1 button-text2 uk-text-capitalize menu-subitem2" href="#"> No entries yet</a>                                
+                            </li>                            
+                        </ul>
+                    </li>
+                    <li class="uk-active"><a class="button-text1" href="#"> > Articles</a>
+                        <ul class="no-bullets uk-nav-left">
+                            <li class="uk-active">
+                                <a class="button-text1 button-text2 uk-text-capitalize menu-subitem2" href="#"> No entries yet</a>                                
+                            </li>                            
+                        </ul>
+                    </li>
+                    <li class="uk-active"><a href="javascript:addContent('me');">About Me</a></li>
+                </ul>
+    
+    
+            </div>
+        </div>
+        <!-- Navigation Bar Mobile Ends -->
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".button-text1").click(function(){
+                var dispattr = $(this).next('ul').css( "display");
+                if(dispattr == 'none'){
+                    $(this).next('ul').css( "display", "inline-block" );
+                } else {
+                    $(this).next('ul').css( "display", "none" );
+                }
+            });
+        });
+    </script>
+</div>

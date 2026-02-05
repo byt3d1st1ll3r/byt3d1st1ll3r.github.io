@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/uikit.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/uikit.js"></script>
+    <script src="/assets/js/uikit-icons.js"></script>
+
+    <title>byt3d1$t1ll3r's Personal Blog</title>
+    <meta name="title" content="byt3d1$t1ll3r's Personal Blog">
+    <meta name="description" content="Personal blog of byt3d1$t1ll3r">
+    <meta name="keywords" content="Cybersecurity, Infosec">
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+
+</head>
+<body>
+<!-- Header -->
+<div id="main-header-404">
+    <div class="menu-bar-container">
+        <div class="menu-bar">
+            <!-- Navigation Bar -->
+            <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-visible@m" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+                
+                <div class="uk-navbar-left">
+                    <a href="/index.html" class="uk-navbar-item uk-logo uk-light">byt3d1$t1ll3r's Personal Blog</a>
+                </div>
+                <div class="uk-navbar-right">
+    
+                    <ul class="uk-navbar-nav uk-light">
+                        <li><a class="uk-button-text uk-text-capitalize menu-item" href="/index.html">Return Home</a></li>
+                    </ul>
+        
+                </div>
+            </nav>
+            <!-- Navigation Bar Ends  -->
+    
+            <!-- Navigation Bar Mobile -->
+            <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-hidden@m" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+                
+                <div class="uk-navbar-left">
+                    <a href="/index.html" class="uk-navbar-item uk-logo uk-light">byt3d1$t1ll3r's Personal Blog</a>
+                </div>
+                <div class="uk-navbar-right">
+    
+                    <ul class="uk-navbar-nav uk-light">
+                        <li><button uk-toggle="target: #offcanvas-nav" type="button" uk-navbar-toggle-icon></button></li>
+    
+                    </ul>
+    
+                </div>
+            </nav>
+            <!-- Change This -->
+            <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar uk-flex-column">
+        
+                    <ul class="uk-nav uk-nav-primary uk-nav-left uk-margin-auto-vertical">
+                        <li class="uk-active"><a href="/index.html">Return Home</a></li>
+                    </ul>
+        
+        
+                </div>
+            </div>
+            <!-- Navigation Bar Mobile Ends -->
+        </div>
+        <script>
+            $(document).ready(function(){
+                $(".button-text1").click(function(){
+                    var dispattr = $(this).next('ul').css( "display");
+                    if(dispattr == 'none'){
+                        $(this).next('ul').css( "display", "inline-block" );
+                    } else {
+                        $(this).next('ul').css( "display", "none" );
+                    }
+                });
+            });
+        </script>
+    </div>
+</div>
+<!-- Header Ends -->
+<!-- Content -->
+<div id="main-404" class="main-content">
+    <!-- image from https://www.svgator.com/blog/404-page-error-animation-examples/ -->
+    <object type="image/svg+xml" data="/assets/images/404-cat.svg" class="responsive-object"></object>
+</div>
+<!-- Content Ends -->
+<!-- Footer -->
+<div id="main-footer" class="main-footer">
+</div>
+<!-- Footer Ends -->
+</body>
+</html>
