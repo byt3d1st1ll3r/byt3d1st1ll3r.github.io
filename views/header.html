@@ -9,17 +9,17 @@
             <div class="uk-navbar-right">
 
                 <ul class="uk-navbar-nav uk-light">
-                    <li><a class="uk-button-text uk-text-capitalize menu-item" href="javascript:addContent('home');">Home</a></li>
-                    <li><a class="uk-button-text uk-text-capitalize menu-item drop" href="javascript:addContent('posts/posts');">Posts</a>
+                    <li><a class="uk-button-text uk-text-capitalize menu-item" href="javascript:loadContent('home');">Home</a></li>
+                    <li><a class="uk-button-text uk-text-capitalize menu-item drop" href="javascript:loadContent('posts/posts');">Posts</a>
                         <ul class="no-bullets">
                             <li>
-                                <a class="uk-button-text uk-text-capitalize menu-subitem" href="javascript:addContent('posts/firstjob');">Looking for your first pentesting job?</a>
+                                <a class="uk-button-text uk-text-capitalize menu-subitem" href="javascript:loadContent('posts/firstjob');">Looking for your first pentesting job?</a>
                             </li>
                         </ul>
                     </li>
-                    <li><a class="uk-button-text uk-text-capitalize menu-item drop" href="javascript:addContent('reviews/reviews');">Reviews</a></li>
-                    <li><a class="uk-button-text uk-text-capitalize menu-item" href="javascript:addContent('articles/articles');">Articles</a></li>
-                    <li><a class="uk-button-text uk-text-capitalize menu-item" href="javascript:addContent('me');">About Me</a></li>
+                    <li><a class="uk-button-text uk-text-capitalize menu-item drop" href="javascript:loadContent('reviews/reviews');">Reviews</a></li>
+                    <li><a class="uk-button-text uk-text-capitalize menu-item" href="javascript:loadContent('articles/articles');">Articles</a></li>
+                    <li><a class="uk-button-text uk-text-capitalize menu-item" href="javascript:loadContent('me');">About Me</a></li>
                 </ul>
     
             </div>
@@ -46,11 +46,11 @@
             <div class="uk-offcanvas-bar uk-flex-column">
     
                 <ul class="uk-nav uk-nav-primary uk-nav-left uk-margin-auto-vertical">
-                    <li class="uk-active"><a href="javascript:addContent('home');">Home</a></li>
+                    <li class="uk-active"><a href="javascript:loadContent('home');">Home</a></li>
                     <li class="uk-active"><a class="button-text1" href="#"> > Posts</a>
                         <ul class="no-bullets uk-nav-left">
                             <li class="uk-active">
-                                <a class="button-text2 uk-text-capitalize menu-subitem2" href="javascript:addContent('posts/firstjob');">Looking for your first pentesting job?</a>
+                                <a class="button-text2 uk-text-capitalize menu-subitem2" href="javascript:loadContent('posts/firstjob');">Looking for your first pentesting job?</a>
                             </li>                            
                         </ul>
                     </li>
@@ -68,7 +68,7 @@
                             </li>                            
                         </ul>
                     </li>
-                    <li class="uk-active"><a href="javascript:addContent('me');">About Me</a></li>
+                    <li class="uk-active"><a href="javascript:loadContent('me');">About Me</a></li>
                 </ul>
     
     
@@ -88,4 +88,5 @@
             });
         });
     </script>
+
 </div>
